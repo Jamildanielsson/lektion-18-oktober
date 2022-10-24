@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    background-color: rgba(226, 146, 88, 0.636);
+    width: 700px;
+    height: 620px;
+    margin: 0 auto;
+    display: grid;
+    margin-top:1rem;
+    border-radius: 15px;
+}
+
+main h1 {
+    grid-column: span 3;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+section {
+    display: flex;
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+article {
+    display: grid;
+}
+
+button {
+    margin: 1rem 2rem;
+    padding: 1rem 2rem;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    width: 30%;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#rock {
+    background-color: aliceblue;
+}
+
+#rock:hover {
+    filter: brightness(110%);
+    box-shadow: 1px 1px rgb(205, 212, 218);
+}
+
+#rock:active {
+    transform: translateY(2px);
+ }
+
+#paper {
+    background-color: floralwhite;
+}
+
+#paper:hover {
+    filter: brightness(110%);
+    box-shadow: 1px 1px rgb(224, 220, 211);
+}
+
+#paper:active {
+    transform: translateY(2px);
+ }
+
+#scissors {
+    background-color: gainsboro;
+}
+
+#scissors:hover {
+    filter: brightness(110%);
+    box-shadow: 1px 1px rgb(225, 218, 218);
+}
+
+#scissors:active {
+    transform: translateY(2px);
+ }
+
+#reload {
+    background-color: rgb(253, 162, 64);
+    height: 65px;
+
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+
+}
+
+#reload:hover {
+    filter: brightness(110%);
+}
+
+#reload:active {
+     transform: translateY(2px);
+  }
+
+p {
+    grid-column: span 3;
+    
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+#p1 {
+    grid-column: span 3;
+    text-align: center;
+    padding: 1rem;
+}
+
+#p2 {
+    text-align: center;
+    grid-column: span 2 / 3;
+
+    
+}
+
+#p4 {
+    grid-column: span 3;
+    text-align: center;
+    padding: 1rem;
+}
+
+#vs {
+    grid-column: auto / span 1;
+    text-align: center;
+}
+
+#computer {
+    grid-column: auto / span 1;
+    text-align: center;
+}
+
+
+#player {
+    flex-direction: column;
+    grid-column: span 1;
+    text-align: left;
+    text-align: center;
+}
+
+.d1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
